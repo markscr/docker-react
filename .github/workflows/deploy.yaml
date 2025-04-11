@@ -38,7 +38,7 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: ${{ github.actor }}/docker-react:${{ github.sha }}
+          tags: markscr/docker-react:${{ github.sha }}
 
       - name: Generate ZIP
         run: zip -r deploy-${{ github.sha }}.zip . -x '*.git*'
