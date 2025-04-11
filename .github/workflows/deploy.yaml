@@ -41,7 +41,6 @@ jobs:
           version_label: ${{ github.sha }}
           region: us-east-1
           deployment_package: deploy-${{ github.sha }}.zip
-          wait_for_deployment: true
 
       - name: Deployed!
         run: echo App deployed to ELB
